@@ -11,7 +11,7 @@ import {
 export class ActorRepository {
 
     constructor(@InjectPersistenceManager() readonly persistenceManager: PersistenceManager,
-                @InjectCypher(__dirname, 'moviesForActor') readonly moviesForActor: CypherStatement,
+                @InjectCypher(__dirname, 'moviesForActor-NEO4J') readonly moviesForActor: CypherStatement,
                 @InjectCypher(__dirname, 'coActorsForActor') readonly coActorsForActor: CypherStatement) {
     }
 
